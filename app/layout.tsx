@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import '@/src/styles/index.css'
 import Header from "@/src/ui/header/header";
+import { Syne } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const syne = Syne({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,11 +17,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        <h1 className="text-5xl font-bold underline">Hello</h1>
-        {children}
-        </body>
+      <body className={`${syne.className} p-4`}>
+        <div className="border border-black px-6 md:px-8 lg:px-10">
+          <div className="w-full max-w-7xl mx-auto my-0">
+        <div className="grid gap-4 grid-rows-subgrid grid-cols-1 auto-cols-fr justify-between items-center py-6">
+            <Header />
+            </div>
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
