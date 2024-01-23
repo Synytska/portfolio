@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Divider from "./divider";
 {/* <import { usePathname } from "next/navigation"; */ }
 
 const links = [
@@ -23,7 +24,7 @@ export default function NavList() {
                         key={link.name}
                         href={link.href}>
                         <p>{link.name}</p>
-                        <div className="h-[1px] w-full bg-black"></div>
+                        <Divider /> 
                     </Link>
                     // </div>
                 )
