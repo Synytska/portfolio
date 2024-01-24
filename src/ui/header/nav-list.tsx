@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Divider from "./divider";
+import Divider from "../repeated_components/divider";
 {/* <import { usePathname } from "next/navigation"; */ }
 
 const links = [
@@ -15,10 +15,8 @@ export default function NavList() {
     // const pathname = usePathname();
     return (
         <>
-            {/* // <div className="flex items-start justify-center flex-col md:flex-row gap-y-8 gap-x-8"> */}
             {links.map(link => {
                 return (
-                    // <div className="flex items-start justify-center flex-col md:flex-row gap-y-8 gap-x-8">
                     <Link
                         className="flex items-start justify-center flex-col md:flex-row gap-y-6 gap-x-6"
                         key={link.name}
@@ -26,11 +24,9 @@ export default function NavList() {
                         <p>{link.name}</p>
                         <Divider /> 
                     </Link>
-                    // </div>
                 )
             }
             )}
-            {/* // </div> */}
         </>
 
 

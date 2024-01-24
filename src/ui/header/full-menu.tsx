@@ -1,4 +1,3 @@
-import Button from "./button";
 import NavList from "./nav-list";
 
 export default function Menu() {

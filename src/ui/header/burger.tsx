@@ -2,7 +2,6 @@
 
 import { useState, createContext } from "react"
 import Menu from "./full-menu";
-import Navigation from "./navigation";
 
 export const BurgerContext = createContext(false);
 

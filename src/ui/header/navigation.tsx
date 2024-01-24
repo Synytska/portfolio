@@ -1,6 +1,6 @@
 import NavList from "./nav-list";
 import Button from "./button";
-import VLine from "./vertical-line";
+import VLine from "../repeated_components/vertical-line";
 import Social from "./social-circles";
 import Logo from "./image-logo";
 import Burger from "./burger"
@@ -24,7 +24,7 @@ export default function Navigation() {
                         <Button
                             name={buttons.name}
                             href={buttons.href}
-                            className="text-white bg-[#191919] py-[0.6rem] px-[1rem] text-center rounded-tr-lg rounded-bl-lg"
+                            className="text-white bg-[#191919] py-[0.6rem] px-[1rem] text-center rounded-tr-[10px] rounded-bl-[10px]"
                         />
                         <VLine />
                         <Social />
