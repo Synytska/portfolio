@@ -1,5 +1,5 @@
 import Divider from "@/src/ui/repeated_components/divider";
-import HomeComponent from "@/src/ui/home_page/home_component";
+import HomeComponent from "@/src/ui/modules/homeContent/HomeContent";
 
 
 export default function Home() {

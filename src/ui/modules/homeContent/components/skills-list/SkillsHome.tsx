@@ -1,12 +1,12 @@
-import Divider from "../repeated_components/divider";
-import VLine from "../repeated_components/vertical-line";
-import Mono from "../repeated_components/mono_text";
-import SVG from "./svg_component";
+import Divider from "../../../../repeated_components/divider";
+import VLine from "../../../../repeated_components/vertical-line";
+import Mono from "../../../../repeated_components/mono_text";
+import SVG from "./SvgSkills";
 
 const skills = ["html", "css", "js", "react", "next", "tailwind"];
 
 
-export default function Skills() {
+export default function SkillsHome() {
     return (
         <>
             <Divider />
@@ -15,7 +15,7 @@ export default function Skills() {
                     <h3>What about my skills</h3>
                 </Mono>
                 <VLine />
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between lg:justify-evenly">
                     <div className="flex flex-col gap-[20px] uppercase font-['Mier_A'] text-[16px]">
                         {skills.map((key, skill) => {
                             return (

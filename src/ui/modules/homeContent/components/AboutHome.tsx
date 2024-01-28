@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/src/ui/header/button";
-import Mono from "../repeated_components/mono_text";
+import Button from "@/src/ui/repeated_components/button";
+import Mono from "../../../repeated_components/mono_text";
 
 
 const info = [
@@ -12,7 +12,7 @@ const info = [
 
 const git = { text: 'Github', href: 'https://github.com/Synytska' };
 
-export default function HomeAbout() {
+export default function AboutHome() {
   return (
     <div className="py-8 md:py-12 lg:py-16">
       <div className="grid auto-cols-[1fr] gap-x-[3rem] gap-y-[3rem] grid-cols-[1fr] md:grid-cols-[1fr,_1fr] md:grid-rows-[auto]">
@@ -38,7 +38,8 @@ export default function HomeAbout() {
           alt="my photo on the main page"
           width={315}
           height={315}
-          className="rounded-full mx-[auto] mb-[2rem] object cover md:w-[500px]" />
+          className="rounded-full mx-[auto] mb-[2rem] object cover md:w-[500px]" 
+          unoptimized/>
       </div>
     </div >
   )

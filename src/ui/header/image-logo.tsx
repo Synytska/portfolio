@@ -9,6 +9,7 @@ export default function Logo() {
                 height={60}
                 alt="logo"
                 unoptimized
+                className="md:hidden lg:block"
             />
     )
 }

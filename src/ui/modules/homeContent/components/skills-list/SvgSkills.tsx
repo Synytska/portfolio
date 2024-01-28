@@ -34,9 +34,9 @@ function SvgMap({ strokeBl, strokeGr }: { strokeBl: string, strokeGr: string }) 
     )
 }
 
-export default function SVG() {
+export default function SvgSkills() {
     return (
-        <div className="flex flex-col gap-[22px] md:pr-[5rem]">
+        <div className="flex flex-col gap-[24px] md:pr-[5rem]">
             <SvgMap strokeBl="black" strokeGr="#D9D9D9" />
             <SvgMap strokeBl="black" strokeGr="#D9D9D9" />
             <SvgMap strokeBl="#D9D9D9" strokeGr="#D9D9D9" />
