@@ -1,9 +1,10 @@
-import NavList from "./nav-list";
-import Button from "../repeated_components/button";
-import VLine from "../repeated_components/vertical-line";
-import Social from "./social-circles";
-import Logo from "./image-logo";
-import Burger from "./burger";
+import NavList from "./NavList";
+import Button from "../../../repeated_components/Button";
+import VLine from "../../../repeated_components/VLine";
+import Social from "./SocialCircles";
+import Logo from "./Logo";
+import Burger from "./Burger";
+import { HEADER_BUTTON_TEXT } from "../constants/headeritems";
 
 const buttons = { name: "Let's Talk", href: '/about' };
 
@@ -22,8 +23,8 @@ export default function Navigation() {
                         <NavList />
                         <div className="grid justify-items-end items-center gap-x-4 gap-y-4 grid-rows-[auto] grid-cols-[auto_minmax(1px,_1fr)_auto] auto-cols-fr">
                         <Button
-                            name={buttons.name}
-                            href={buttons.href}
+                            name={HEADER_BUTTON_TEXT.name}
+                            href={HEADER_BUTTON_TEXT.href}
                             className="text-white bg-[#191919] py-[0.6rem] px-[1rem] text-center rounded-tr-[10px] rounded-bl-[10px] md:hidden lg:block"
                         />
                         <VLine />
@@ -38,4 +39,3 @@ export default function Navigation() {
 
 
 
-{/* створити функцію яка буде міняти стилі якщо натиснуто бургер(nav-wrap) */ }

@@ -1,9 +1,9 @@
 import Link from "next/link"
-import Mono from "../../../../repeated_components/mono_text"
+import MonoText from "@/src/ui/repeated_components/MonoText";
 import ImageProjectPanel from "./ImageProjectPanel"
 import { PROJ_IMAGE_SRCS } from "../../constants/homeitems"
-import { PROJ_MAIN_IMAGE } from "../../constants/homeitems";
-import Divider from "../../../../repeated_components/divider"
+import { PROJ_MAIN_IMAGE } from "@/src/ui/constants/mainconstants";
+import Divider from "@/src/ui/repeated_components/Divider";
 
 const TextClass = {div: "flex justify-between items-center", p: "text-[24px]"};
 
@@ -21,7 +21,7 @@ export default function ProjectsList() {
                     />
                     <div className={TextClass.div}>
                         <p className={TextClass.p}>{PROJ_MAIN_IMAGE.text}</p>
-                        <Mono><p>{PROJ_MAIN_IMAGE.title}</p></Mono>
+                        <MonoText><p>{PROJ_MAIN_IMAGE.title}</p></MonoText>
                     </div>
 
                 </Link>
@@ -38,7 +38,7 @@ export default function ProjectsList() {
 
                         <div className={TextClass.div}>
                             <p className={TextClass.p}>{item.text}</p>
-                            <Mono><p>{item.title}</p></Mono>
+                            <MonoText><p>{item.title}</p></MonoText>
                         </div>
                     </Link>
                 </div>

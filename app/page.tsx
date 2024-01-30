@@ -1,4 +1,4 @@
-import Divider from "@/src/ui/repeated_components/divider";
+import Divider from "@/src/ui/repeated_components/Divider";
 import HomeComponent from "@/src/ui/modules/homeContent/HomeContent";
 
 

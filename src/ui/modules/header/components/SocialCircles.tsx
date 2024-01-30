@@ -1,15 +1,10 @@
 import Link from "next/link"
+import { SOCIAL_CIRCLES_TEXT } from "../constants/headeritems"
 
-const socials = [
-    {name: 'GIT', href: '/', target: '_blank'},
-    {name: 'WA', href: '/', target: '_blank'},
-    {name: 'Gm', href: '/', target: '_blank'}
-
-]
-export default function Social(){
+export default function SocialCircles(){
     return(
         <div className="flex items-center gap-x-2 gap-y-2">
-        {socials.map(social => {
+        {SOCIAL_CIRCLES_TEXT.map(social => {
             return(
                 <Link
                 key={social.name}

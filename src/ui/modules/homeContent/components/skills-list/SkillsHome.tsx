@@ -1,9 +1,9 @@
-import Divider from "../../../../repeated_components/divider";
-import VLine from "../../../../repeated_components/vertical-line";
-import Mono from "../../../../repeated_components/mono_text";
-import SVG from "./SvgSkills";
-
-const skills = ["html", "css", "js", "react", "next", "tailwind"];
+import Divider from "@/src/ui/repeated_components/Divider";
+import MonoText from "@/src/ui/repeated_components/MonoText";
+import SvgSkills from "./SvgSkills";
+import { SKILLS_LIST } from "../../constants/homeitems";
+import VLine from "@/src/ui/repeated_components/VLine";
+import { ABOUT_INFO } from "../../constants/homeitems";
 
 
 export default function SkillsHome() {
@@ -11,19 +11,19 @@ export default function SkillsHome() {
         <>
             <Divider />
             <div className="grid auto-cols-[1fr] gap-y-8 grid-cols-[1fr] grid-rows-[auto] py-[2rem] gap-x-12 md:gap-y-12 md:grid-cols-[.25fr,_1px,_1fr] md:py-[3rem] lg:gap-16 lg:grid-cols-[.46fr,_1px,_1fr] lg:py-[4rem]">
-                <Mono>
-                    <h3>What about my skills</h3>
-                </Mono>
+                <MonoText>
+                    <h3>{ABOUT_INFO.skill}</h3>
+                </MonoText>
                 <VLine />
                 <div className="flex flex-row justify-between lg:justify-evenly">
                     <div className="flex flex-col gap-[20px] uppercase font-['Mier_A'] text-[16px]">
-                        {skills.map((key, skill) => {
+                        {SKILLS_LIST.map((key, skill) => {
                             return (
-                                <p key={key}>{skills[skill]}</p>
+                                <p key={key}>{SKILLS_LIST[skill]}</p>
                             )
                         })}
                     </div>
-                     <SVG />
+                     <SvgSkills />
                 </div>
             </div>
             <Divider />

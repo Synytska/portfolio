@@ -1,21 +1,13 @@
 import Link from "next/link";
-import Divider from "../repeated_components/divider";
+import Divider from "../../../repeated_components/Divider";
+import { MENU_LINKS } from "../constants/headeritems";
 {/* <import { usePathname } from "next/navigation"; */ }
-
-const links = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Projects', href: '/project' },
-    { name: 'Contact', href: '/contact' }
-];
-
-
 
 export default function NavList() {
     // const pathname = usePathname();
     return (
         <>
-            {links.map(link => {
+            {MENU_LINKS.map(link => {
                 return (
                     <Link
                         className="flex items-start justify-center flex-col md:flex-row gap-y-6 gap-x-6"

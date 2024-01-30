@@ -12,7 +12,7 @@ interface Img {
 const classImg = "rounded-bl-[2.5rem] rounded-tr-[2.5rem] mb-[0.8rem] object-cover ";
 
 
-export default function ImageProjectPanel({ src, alt, width, height, className }: Img) {
+export default function ImageProjectPanel({ src, alt, width, height }: Img) {
     return (
         <>
             <Image

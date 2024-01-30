@@ -1,8 +1,7 @@
 'use client'
 
 import { useState, createContext } from "react"
-import Menu from "./full-menu";
-
+import FullMenu from "./FullMenu";
 export const BurgerContext = createContext(false);
 
 export default function Burger() {
@@ -17,7 +16,7 @@ export default function Burger() {
                 <div className="h-px w-full bg-[#191919] block rounded duration-[0.3s] ease-in-out"></div>
                 <div className="translate-y-[9px] h-px w-full bg-[#191919] block rounded duration-[0.3s] ease-in-out"></div>
             </div>
-            <div className="">{isOpen ? <Menu /> : ''}</div>
+            <div className="">{isOpen ? <FullMenu /> : ''}</div>
         </div>
 
     )

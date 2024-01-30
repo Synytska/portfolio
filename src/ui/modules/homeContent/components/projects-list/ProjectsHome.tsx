@@ -1,7 +1,9 @@
 import ProjectsList from "./ProjectList";
-import VLine from "../../../../repeated_components/vertical-line";
-import Mono from "../../../../repeated_components/mono_text";
-import Button from "../../../../repeated_components/button";
+import VLine from "@/src/ui/repeated_components/VLine";
+import MonoText from "@/src/ui/repeated_components/MonoText";
+import Button from "@/src/ui/repeated_components/Button";
+import { ABOUT_BUTTON_TEXT } from "../../constants/homeitems";
+import { FEATURED_SECT } from "@/src/ui/constants/mainconstants";
 
 export default function ProjectsHome() {
     return (
@@ -12,20 +14,20 @@ export default function ProjectsHome() {
             <VLine />
             <div className="w-full xl:max-w-[22rem]">
                 <div className="mb-[0.5rem]">
-                    <h2 className="text-[3rem] lg:text-[4rem] uppercase m-0 leading-[120%]">Featured Work</h2>
+                    <h2 className="text-[3rem] lg:text-[4rem] uppercase m-0 leading-[120%]">{FEATURED_SECT}</h2>
                 </div>
                 <div className="mb-[1.5rem] md:mb-[2.5rem] lg:mb-[3rem]">
                     <p className="text-[1.25rem] leading-[160%] font-['Mier_A'] md:text-[1.4rem]">
-                        Invite you to view some of my latest work
+                        {ABOUT_BUTTON_TEXT.projectinfo.text}
                     </p>
                 </div>
-                <Mono>
+                <MonoText>
                     <Button
-                        name="See all work"
-                        href="/projects"
+                        name={ABOUT_BUTTON_TEXT.projectbutt.text}
+                        href={ABOUT_BUTTON_TEXT.projectbutt.href}
                         className="py-[0.6rem] px-[1rem] text-center border border-black w-[100%] inline-block rounded-tr-[10px] rounded-bl-[10px] bg-black text-white hover:bg-transparent hover:text-black "
                     />
-                </Mono>
+                </MonoText>
             </div>
         </div>
     )

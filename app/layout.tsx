@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import '@/src/styles/index.css'
-import Header from "@/src/ui/header/header";
+import Header from "@/src/ui/modules/header/Header";
 import { Syne } from "next/font/google";
 
 const syne = Syne({ subsets: ["latin"], weight: ["400"] });
