@@ -1,9 +1,8 @@
 import Divider from "@/src/ui/repeated_components/Divider";
 import MonoText from "@/src/ui/repeated_components/MonoText";
 import SvgSkills from "./SvgSkills";
-import { SKILLS_LIST } from "../../constants/homeitems";
+import { SKILLS_LIST, ABOUT_INFO } from "../../constants/homeitems";
 import VLine from "@/src/ui/repeated_components/VLine";
-import { ABOUT_INFO } from "../../constants/homeitems";
 
 
 export default function SkillsHome() {
@@ -15,8 +14,8 @@ export default function SkillsHome() {
                     <h3>{ABOUT_INFO.skill}</h3>
                 </MonoText>
                 <VLine />
-                <div className="flex flex-row justify-between lg:justify-evenly">
-                    <div className="flex flex-col gap-[20px] uppercase font-['Mier_A'] text-[16px]">
+                <div className="flex-justify-M flex-row  lg:justify-evenly">
+                    <div className="flex-M gap-[20px] uppercase font-['Mier_A'] text-[16px]">
                         {SKILLS_LIST.map((key, skill) => {
                             return (
                                 <p key={key}>{SKILLS_LIST[skill]}</p>

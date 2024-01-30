@@ -9,9 +9,6 @@ interface Img {
 
 }
 
-const classImg = "rounded-bl-[2.5rem] rounded-tr-[2.5rem] mb-[0.8rem] object-cover ";
-
-
 export default function ImageProjectPanel({ src, alt, width, height }: Img) {
     return (
         <>
@@ -20,7 +17,7 @@ export default function ImageProjectPanel({ src, alt, width, height }: Img) {
                 alt={alt || 'some photo'}
                 width={1000 || width}
                 height={760 || height}
-                className={`${classImg} hidden md:block`}
+                className="rounded-proj-M hidden md:block"
                 unoptimized
             />
             <Image
@@ -28,7 +25,7 @@ export default function ImageProjectPanel({ src, alt, width, height }: Img) {
                 alt={alt || 'some photo'}
                 width={450 || width}
                 height={380 || height}
-                className={`${classImg} md:hidden block`}
+                className="rounded-proj-M md:hidden block"
                 unoptimized
             />
         </>

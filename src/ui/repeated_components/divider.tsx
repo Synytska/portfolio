@@ -1,5 +1,5 @@
 export default function Divider(){
     return(
-        <div className="h-[1px] w-full bg-black"></div>
+        <div className="h-[1px] w-full bg-blackM"></div>
     )
 }

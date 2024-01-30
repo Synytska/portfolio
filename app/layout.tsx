@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${syne.className} p-4 text-[#191919]`}>
-        <div className="border border-black px-6 md:px-8 lg:px-10">
+        <div className="border border-blackM px-6 md:px-8 lg:px-10">
           <div className="w-full max-w-7xl mx-auto my-0">
             <Header />
             {children}

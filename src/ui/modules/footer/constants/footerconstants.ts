@@ -15,4 +15,4 @@ export const SOCIAL_FOOTER = [
     {href: "/", name: "gmail"}
 ];
 
-export const MADE_BY = "©&nbsp;Made by Khrystyna Synytska";
+export const MADE_BY = "Made by Khrystyna Synytska";

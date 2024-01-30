@@ -5,9 +5,7 @@ import MonoText from "@/src/ui/repeated_components/MonoText";
 import FooterInfo from "./FooterInfo";
 import FooterSocial from "./FooterSocial";
 import { CONTACT_SECT } from "@/src/ui/constants/mainconstants";
-import { LINK_TEXT } from "../constants/footerconstants";
-import { BUTTON_FOOTER } from "../constants/footerconstants";
-import { MADE_BY } from "../constants/footerconstants";
+import { BUTTON_FOOTER, MADE_BY, LINK_TEXT } from "../constants/footerconstants";
 
 
 export default function FooterConstructor() {
@@ -38,7 +36,7 @@ export default function FooterConstructor() {
             <Divider />
             <div className="pt-[3rem] pb-[4rem]">
                 <MonoText>
-                    <p>{MADE_BY}</p>
+                    <p>©&nbsp;{MADE_BY}</p>
                 </MonoText>
             </div>
         </>
