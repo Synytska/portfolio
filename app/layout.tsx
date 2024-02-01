@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import '@/src/styles/index.css'
 import Header from "@/src/ui/modules/header/Header";
 import { Syne } from "next/font/google";
+import Footer from "@/src/ui/modules/footer/Footer";
 
 const syne = Syne({ subsets: ["latin"], weight: ["400"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
           <div className="w-full max-w-7xl mx-auto my-0">
             <Header />
             {children}
+            <Footer/>
           </div>
         </div>
       </body>

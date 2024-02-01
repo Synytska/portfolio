@@ -22,7 +22,7 @@ export default function Navigation() {
                         <Button
                             name={HEADER_BUTTON_TEXT.name}
                             href={HEADER_BUTTON_TEXT.href}
-                            className="text-whiteM bg-blackM py-[0.6rem] px-[1rem] text-center rounded-M md:hidden lg:block"
+                            className="text-whiteM bg-blackM border border-blackM py-[0.6rem] px-[1rem] text-center rounded-M md:hidden lg:block hover:bg-[transparent] hover:text-blackM"
                         />
                         <VLine />
                         <Social />

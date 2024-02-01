@@ -36,3 +36,15 @@
 .gap1_2-M{
 @apply gap-[1.2rem];
 }
+.parragraph {
+    @apply my-4 text-[1.4rem] leading-[150%] md:text-[1.5rem];
+}
+.h2-wrap-M {
+    @apply max-w-[22rem] mb-2 w-full;
+}
+.h2-M {
+    @apply text-[3rem] lg:text-6xl uppercase m-0;
+}
+.font-Mier {
+    @apply font-['Mier_A'];
+}

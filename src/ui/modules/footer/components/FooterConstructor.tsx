@@ -34,7 +34,7 @@ export default function FooterConstructor() {
                 </div>
             </div>
             <Divider />
-            <div className="pt-[3rem] pb-[4rem]">
+            <div className="py-[3rem]">
                 <MonoText>
                     <p>©&nbsp;{MADE_BY}</p>
                 </MonoText>

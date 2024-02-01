@@ -10,7 +10,7 @@ export default function SocialCircles(){
                 key={social.name}
                 href={social.href}
                 target={social.target}
-                className="flex-center-M w-[32px] h-[32px] text-center border border-blackM rounded-full justify-center leading-[100%] transition-[background-color] duration-[.2s] hover:bg-[blackM] hover:text-whiteM text-[13px]"
+                className="flex-center-M w-[32px] h-[32px] text-center border border-blackM rounded-full justify-center leading-[100%] transition-[background-color] duration-[.2s] hover:bg-blackM hover:text-whiteM text-[13px]"
                 >{social.name}</Link>
             )
         })}

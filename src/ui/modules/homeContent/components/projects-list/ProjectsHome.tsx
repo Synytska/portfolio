@@ -25,7 +25,7 @@ export default function ProjectsHome() {
                     <Button
                         name={ABOUT_BUTTON_TEXT.projectbutt.text}
                         href={ABOUT_BUTTON_TEXT.projectbutt.href}
-                        className="py-[0.6rem] px-[1rem] text-center border border-blackM w-[100%] inline-block rounded-M bg-blackM text-whiteM hover:bg-transparent hover:text-blackM "
+                        className="py-[0.6rem] px-[1rem] text-center border border-blackM w-[100%] inline-block rounded-M bg-blackM text-whiteM hover:bg-[transparent] hover:text-blackM "
                     />
                 </MonoText>
             </div>
