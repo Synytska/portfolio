@@ -9,22 +9,22 @@ interface Img {
 
 }
 
-export default function ImageProjectPanel({ src, alt, width, height }: Img) {
+export const ImageProjectPanel = ({ src, alt, width, height }: Img) => {
     return (
         <>
             <Image
                 src={src}
                 alt={alt || 'some photo'}
-                width={1000 || width}
-                height={760 || height}
+                width={1000}
+                height={760}
                 className="rounded-proj-M hidden md:block"
                 unoptimized
             />
             <Image
                 src={src}
                 alt={alt || 'some photo'}
-                width={450 || width}
-                height={380 || height}
+                width={450}
+                height={380}
                 className="rounded-proj-M md:hidden block"
                 unoptimized
             />

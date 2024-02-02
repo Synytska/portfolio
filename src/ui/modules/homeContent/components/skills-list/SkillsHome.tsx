@@ -1,11 +1,12 @@
 import Divider from "@/src/ui/repeated_components/Divider";
 import MonoText from "@/src/ui/repeated_components/MonoText";
-import SvgSkills from "./SvgSkills";
-import { SKILLS_LIST, ABOUT_INFO } from "../../constants/homeitems";
+import { SvgSkills } from "./SvgSkills";
 import VLine from "@/src/ui/repeated_components/VLine";
 
+import { SKILLS_LIST, ABOUT_INFO } from "../../constants/homeitems";
 
-export default function SkillsHome() {
+
+export const SkillsHome = () => {
     return (
         <>
             <Divider />

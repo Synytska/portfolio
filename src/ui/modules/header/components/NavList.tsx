@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Divider from "../../../repeated_components/Divider";
-import { MENU_LINKS } from "../constants/headeritems";
-{/* <import { usePathname } from "next/navigation"; */ }
 
-export default function NavList() {
-    // const pathname = usePathname();
+import Divider from "@/src/ui/repeated_components/Divider";
+
+import { MENU_LINKS } from "../constants/headeritems";
+
+export const NavList = () => {
     return (
         <>
             {MENU_LINKS.map(link => {

@@ -1,11 +1,13 @@
-import Divider from "../../repeated_components/Divider"
 import Image from "next/image"
-import { TARGET_BLANK, ABOUT_SECT, CERTIFIC_SECT } from "../../constants/mainconstants"
-import { PARAGRAPH_ONE, PARAGRAPH_TWO, PARAGRAPH_THREE, CV_INFO, PARAGRAPH_CERTIFIC, CERTIFICATES } from "./constants/aboutitems"
 import Link from "next/link"
 
+import Divider from "@/src/ui/repeated_components/Divider"
 
-export default function AboutContent() {
+import { TARGET_BLANK, ABOUT_SECT, CERTIFIC_SECT } from "../../constants/mainconstants"
+import { PARAGRAPH_ONE, PARAGRAPH_TWO, PARAGRAPH_THREE, CV_INFO, PARAGRAPH_CERTIFIC, CERTIFICATES } from "./constants/aboutitems"
+
+
+export const AboutContent = () => {
     return (
         <>
             <Divider />

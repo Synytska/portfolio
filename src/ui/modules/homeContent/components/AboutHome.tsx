@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+
 import Button from "@/src/ui/repeated_components/Button";
-import MonoText from "../../../repeated_components/MonoText";
+import MonoText from "@/src/ui/repeated_components/MonoText";
+
 import { ABOUT_INFO, ABOUT_BUTTON_TEXT } from "../constants/homeitems";
 
 
-export default function AboutHome() {
+export const AboutHome = () => {
   return (
     <div className="py-8 md:py-12 lg:py-16">
       <div className="grid auto-cols-[1fr] gap-x-[3rem] gap-y-[3rem] grid-cols-[1fr] md:grid-cols-[1fr,_1fr] md:grid-rows-[auto]">

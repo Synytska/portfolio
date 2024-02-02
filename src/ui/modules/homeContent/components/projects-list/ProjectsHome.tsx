@@ -1,11 +1,12 @@
-import ProjectsList from "./ProjectList";
+import { ProjectsList } from "./ProjectList";
 import VLine from "@/src/ui/repeated_components/VLine";
 import MonoText from "@/src/ui/repeated_components/MonoText";
 import Button from "@/src/ui/repeated_components/Button";
+
 import { ABOUT_BUTTON_TEXT } from "../../constants/homeitems";
 import { FEATURED_SECT } from "@/src/ui/constants/mainconstants";
 
-export default function ProjectsHome() {
+export const ProjectsHome = () => {
     return (
         <div className="flex flex-col-reverse pt-[2rem] gap-[3rem] md:gap-[2rem] md:pt-[3rem] xl:gap-[4rem] xl:grid-rows-[auto] xl:grid-cols-[1fr,_1px,_.47fr] xl:auto-cols-[1fr] xl:grid xl:pt-[4rem]">
             <div className="flex-M gap-y-[2rem] gap-x-[3rem]">

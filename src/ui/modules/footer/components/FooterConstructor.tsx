@@ -1,14 +1,16 @@
-import VLine from "@/src/ui/repeated_components/VLine";
 import Link from "next/link"
+
 import Divider from "@/src/ui/repeated_components/Divider";
 import MonoText from "@/src/ui/repeated_components/MonoText";
-import FooterInfo from "./FooterInfo";
-import FooterSocial from "./FooterSocial";
+import VLine from "@/src/ui/repeated_components/VLine";
+import { FooterInfo } from "./FooterInfo";
+import { FooterSocial } from "./FooterSocial";
+
 import { CONTACT_SECT } from "@/src/ui/constants/mainconstants";
 import { BUTTON_FOOTER, MADE_BY, LINK_TEXT } from "../constants/footerconstants";
 
 
-export default function FooterConstructor() {
+export const FooterConstructor = () => {
     return (
         <>
             <Divider />

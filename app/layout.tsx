@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import '@/src/styles/index.css'
-import Header from "@/src/ui/modules/header/Header";
+
+import { BaseLayout } from "@/src/ui/components/BaseLayout";
+
 import { Syne } from "next/font/google";
-import Footer from "@/src/ui/modules/footer/Footer";
+import '@/src/styles/index.css'
+
 
 const syne = Syne({ subsets: ["latin"], weight: ["400"] });
 
@@ -18,14 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${syne.className} p-4 text-[#191919]`}>
-        <div className="border border-blackM px-6 md:px-8 lg:px-10">
-          <div className="w-full max-w-7xl mx-auto my-0">
-            <Header />
-            {children}
-            <Footer/>
-          </div>
-        </div>
+      <body className={`${syne.className} p-4 text-blackM`}>
+        <BaseLayout>
+          {children}
+        </BaseLayout>
+
       </body>
     </html>
   );

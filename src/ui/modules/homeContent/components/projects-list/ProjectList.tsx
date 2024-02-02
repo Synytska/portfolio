@@ -1,14 +1,16 @@
 import Link from "next/link"
+
+import Divider from "@/src/ui/repeated_components/Divider";
 import MonoText from "@/src/ui/repeated_components/MonoText";
-import ImageProjectPanel from "./ImageProjectPanel"
+import { ImageProjectPanel } from "./ImageProjectPanel";
+
 import { PROJ_IMAGE_SRCS } from "../../constants/homeitems"
 import { PROJ_MAIN_IMAGE } from "@/src/ui/constants/mainconstants";
-import Divider from "@/src/ui/repeated_components/Divider";
 import { TARGET_BLANK } from "@/src/ui/constants/mainconstants";
 
 const TextClass = {div: "flex-justify-M items-center", p: "text-[24px]"};
 
-export default function ProjectsList() {
+export const ProjectsList = () => {
     return (
         <>
             <div>

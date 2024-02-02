@@ -1,9 +1,5 @@
 import AboutContent from "@/src/ui/modules/aboutContent/AboutContent";
 
-export default function About() {
-    return (
-     <>
+export const About = () => (
     <AboutContent />
-     </>
-    );
-  }
+);

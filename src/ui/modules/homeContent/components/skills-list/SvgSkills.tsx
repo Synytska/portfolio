@@ -20,7 +20,7 @@ function SvgMap({ strokeBl, strokeGr }: { strokeBl: string, strokeGr: string }) 
     )
 }
 
-export default function SvgSkills() {
+export const SvgSkills = () => {
     return (
         <div className="flex-M gap-[24px] md:pr-[5rem]">
             <SvgMap strokeBl="black" strokeGr="#D9D9D9" />

@@ -1,7 +1,8 @@
 import Link from "next/link"
+
 import { SOCIAL_CIRCLES_TEXT } from "../constants/headeritems"
 
-export default function SocialCircles(){
+export const SocialCircles = () => {
     return(
         <div className="flex-center-M gap-x-2 gap-y-2">
         {SOCIAL_CIRCLES_TEXT.map(social => {

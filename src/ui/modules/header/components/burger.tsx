@@ -1,12 +1,11 @@
 'use client'
-
 import { useState, createContext } from "react"
-import FullMenu from "./FullMenu";
+
+import { FullMenu } from "./FullMenu";
+
 import { EMPTY_SPACE } from "@/src/ui/constants/mainconstants";
 
-// export const BurgerContext = createContext(false);
-
-export default function Burger() {
+export const Burger = () => {
     const [isOpen, setIsOpen] = useState(false);
     const burgerClick = () => {
         setIsOpen(!isOpen);

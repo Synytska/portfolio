@@ -12,11 +12,6 @@ export const CERTIFICATES = [
     {src: "/solol.webp", alt: "sololearn certificate", text: "Sololearn - JavaScript"},
     {src: "/freecode.png", alt: "Freecodecamp certificate", text: "Freecodecamp - Responsive web design"},
     {src: "/js.png", alt: "Freecodecamp certificate", text: "Freecodecamp - JavaScript Algorithms"},
-
-
-
-
-     
 ]
 
 

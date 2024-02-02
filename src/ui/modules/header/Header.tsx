@@ -1,7 +1,7 @@
 import MonoText from "../../repeated_components/MonoText";
 import Navigation from "./components/Navigation";
 
-export default function Header() {
+export const Header = () => {
     return (
         <MonoText>
             <Navigation />
