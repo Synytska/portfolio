@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Button from "@/src/ui/repeated_components/Button";
-import MonoText from "@/src/ui/repeated_components/MonoText";
+import { Button } from "@/src/ui/components/Button";
+import { MonoText } from "@/src/ui/components/MonoText";
 
-import { ABOUT_INFO, ABOUT_BUTTON_TEXT } from "../constants/homeitems";
+import { ABOUT_INFO, ABOUT_BUTTON_TEXT, ABOUT_PHOTO } from "../../constants/homeitems";
 
 
 export const AboutHome = () => {
@@ -29,8 +29,8 @@ export const AboutHome = () => {
         </div>
 
         <Image
-          src='/main-photo.png'
-          alt="my photo on the main page"
+          src={ABOUT_PHOTO.src}
+          alt={ABOUT_PHOTO.alt}
           width={315}
           height={315}
           className="rounded-full mx-[auto] mb-[2rem] object cover md:w-[500px]"

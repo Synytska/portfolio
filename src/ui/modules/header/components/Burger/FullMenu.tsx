@@ -1,4 +1,4 @@
-import NavList from "./NavList";
+import { NavList } from "../Navigation/NavList"
 
 export const FullMenu = () => {
     return (

@@ -1,7 +1,7 @@
 import Link from "next/link"
 
-import Divider from "@/src/ui/repeated_components/Divider";
-import MonoText from "@/src/ui/repeated_components/MonoText";
+import {Divider} from "@/src/ui/components/Divider";
+import {MonoText} from "@/src/ui/components/MonoText";
 import { ImageProjectPanel } from "./ImageProjectPanel";
 
 import { PROJ_IMAGE_SRCS } from "../../constants/homeitems"

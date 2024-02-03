@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/ui/header/burger/Burger.tsx", "src/ui/modules/header/components/NavList.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/ui/header/burger/Burger.tsx", "src/ui/modules/header/components/Navigation/NavList.tsx"],
   "exclude": ["node_modules"]
 }

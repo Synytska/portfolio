@@ -8,6 +8,8 @@ export const PROJ_IMAGE_SRCS = [
 
 
 //about&proj-sect
+export const ABOUT_PHOTO = {src: "/main-photo.png", alt: "my photo on the main page"};
+
 export const ABOUT_INFO = {
     greet: ["Hey, I'm Khrystyna, Frontend Developer"],
     info: ["Press the button below for further information or check my "],

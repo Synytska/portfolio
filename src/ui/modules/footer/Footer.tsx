@@ -1,4 +1,4 @@
-import FooterConstructor from "./components/FooterConstructor"
+import { FooterConstructor } from "./components/FooterConstructor"
 
 export const Footer = () => {
     return (

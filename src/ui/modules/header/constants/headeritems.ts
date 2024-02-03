@@ -12,3 +12,5 @@ export const SOCIAL_CIRCLES_TEXT = [
     {name: 'WA', href: "https://wa.me/0892579197", target: '_blank'},
     {name: 'Gm', href: '/', target: '_blank'}
 ]
+
+export const LOGO_IMG = {src: "/Logo.png", alt: "logo"};

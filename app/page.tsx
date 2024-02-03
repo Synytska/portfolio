@@ -1,12 +1,12 @@
-import Divider from "@/src/ui/repeated_components/Divider";
-import HomeComponent from "@/src/ui/modules/homeContent/HomeContent";
+import { Divider } from "@/src/ui/components/Divider";
+import { HomeContent } from "@/src/ui/modules/homeContent/HomeContent";
 
 
 export default function Home() {
   return (
     <main>
       <Divider />
-      <HomeComponent />
+      <HomeContent />
     </main>
   );
 }

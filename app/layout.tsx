@@ -2,11 +2,8 @@ import type { Metadata } from "next";
 
 import { BaseLayout } from "@/src/ui/components/BaseLayout";
 
-import { Syne } from "next/font/google";
 import '@/src/styles/index.css'
 
-
-const syne = Syne({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${syne.className} p-4 text-blackM`}>
+      <body>
         <BaseLayout>
           {children}
         </BaseLayout>

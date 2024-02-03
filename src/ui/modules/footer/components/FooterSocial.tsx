@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-import MonoText from "@/src/ui/repeated_components/MonoText"
+import { MonoText } from "@/src/ui/components/MonoText";
 
 import { SOCIAL_FOOTER } from "../constants/footerconstants";
 import { TARGET_BLANK } from "@/src/ui/constants/mainconstants";

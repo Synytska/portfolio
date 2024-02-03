@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import Divider from "@/src/ui/repeated_components/Divider";
+import { Divider } from "@/src/ui/components/Divider";
 
-import { MENU_LINKS } from "../constants/headeritems";
+import { MENU_LINKS } from "../../constants/headeritems";
 
 export const NavList = () => {
     return (

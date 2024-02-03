@@ -1,8 +1,8 @@
 import Link from "next/link"
 
-import Divider from "@/src/ui/repeated_components/Divider";
-import MonoText from "@/src/ui/repeated_components/MonoText";
-import VLine from "@/src/ui/repeated_components/VLine";
+import { Divider } from "@/src/ui/components/Divider";
+import {MonoText} from "@/src/ui/components/MonoText";
+import {VLine} from "@/src/ui/components/VLine";
 import { FooterInfo } from "./FooterInfo";
 import { FooterSocial } from "./FooterSocial";
 

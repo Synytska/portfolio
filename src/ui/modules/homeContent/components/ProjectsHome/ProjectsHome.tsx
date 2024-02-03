@@ -1,7 +1,7 @@
 import { ProjectsList } from "./ProjectList";
-import VLine from "@/src/ui/repeated_components/VLine";
-import MonoText from "@/src/ui/repeated_components/MonoText";
-import Button from "@/src/ui/repeated_components/Button";
+import { VLine } from "@/src/ui/components/VLine";
+import { MonoText } from "@/src/ui/components/MonoText";
+import { Button } from "@/src/ui/components/Button";
 
 import { ABOUT_BUTTON_TEXT } from "../../constants/homeitems";
 import { FEATURED_SECT } from "@/src/ui/constants/mainconstants";

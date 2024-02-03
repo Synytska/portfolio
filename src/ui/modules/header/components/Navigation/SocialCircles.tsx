@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-import { SOCIAL_CIRCLES_TEXT } from "../constants/headeritems"
+import { SOCIAL_CIRCLES_TEXT } from "../../constants/headeritems"
 
 export const SocialCircles = () => {
     return(

@@ -1,7 +1,7 @@
-import Divider from "@/src/ui/repeated_components/Divider";
-import MonoText from "@/src/ui/repeated_components/MonoText";
+import {Divider} from "@/src/ui/components/Divider";
+import {MonoText} from "@/src/ui/components/MonoText";
 import { SvgSkills } from "./SvgSkills";
-import VLine from "@/src/ui/repeated_components/VLine";
+import {VLine} from "@/src/ui/components/VLine";
 
 import { SKILLS_LIST, ABOUT_INFO } from "../../constants/homeitems";
 
