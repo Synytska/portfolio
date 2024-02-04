@@ -1,13 +1,12 @@
-import HomeAbout from "./components/AboutHome";
-import Projects from "./components/projects-list/ProjectsHome";
-import Skills from "./components/skills-list/SkillsHome";
+import { AboutHome } from './components/AboutHome/AboutHome';
+import { ProjectsHome } from './components/ProjectsHome/ProjectsHome';
+import { SkillsHome } from './components/SkillsHome/SkillsHome';
 
-export const HomeContent = () => {
-return(
-  <>
-   <HomeAbout />
-   <Skills />
-   <Projects />
-   </>
-)
-}
+export const HomeContent = () => (
+    <>
+        <AboutHome />
+        <SkillsHome />
+        <ProjectsHome />
+    </>
+);
+
