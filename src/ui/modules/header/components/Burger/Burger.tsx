@@ -1,16 +1,16 @@
-'use client'
-import { useState, createContext } from "react"
+'use client';
+import { useState, createContext } from 'react';
 
-import { FullMenu } from "./FullMenu";
-import { Logo } from "./Logo";
+import { FullMenu } from './FullMenu';
+import { Logo } from './Logo';
 
-import { EMPTY_SPACE } from "@/src/ui/constants/defaultValue";
+import { EMPTY_SPACE } from '@/src/ui/constants/defaultValue';
 
 export const Burger = () => {
     const [isOpen, setIsOpen] = useState(false);
     const burgerClick = () => {
         setIsOpen(!isOpen);
-    }
+    };
     return (
         <div className="flex-justify-M w-full">
             <Logo />
@@ -23,6 +23,6 @@ export const Burger = () => {
                 <div>{isOpen ? <FullMenu /> : EMPTY_SPACE}</div>
             </div>
         </div>
+    );
+};
 
-    )
-}
