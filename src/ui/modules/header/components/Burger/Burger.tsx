@@ -20,7 +20,7 @@ export const Burger = () => {
                     <div className="burger-M"></div>
                     <div className="translate-y-[9px] burger-M"></div>
                 </div>
-                <div>{isOpen ? <FullMenu /> : EMPTY_SPACE}</div>
+                <div>{isOpen && <FullMenu />}</div>
             </div>
         </div>
     );
