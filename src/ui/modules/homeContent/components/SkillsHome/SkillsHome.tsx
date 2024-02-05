@@ -15,9 +15,9 @@ export const SkillsHome = () => (
             <VLine />
             <div className="flex-justify-M flex-row  lg:justify-evenly">
                 <div className="flex-M gap-[20px] uppercase font-['Mier_A'] text-[16px]">
-                    {SKILLS_LIST.map((key, skill) => {
-                        return <p key={key}>{SKILLS_LIST[skill]}</p>;
-                    })}
+                    {SKILLS_LIST.map((key, skill) => (
+                        <p key={key}>{SKILLS_LIST[skill]}</p>
+                    ))}
                 </div>
                 <SvgSkills />
             </div>

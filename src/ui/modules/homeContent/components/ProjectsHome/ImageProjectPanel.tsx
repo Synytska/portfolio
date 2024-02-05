@@ -1,14 +1,6 @@
 import Image from 'next/image';
 
-interface Img {
-    src: string;
-    alt: string;
-    width?: number;
-    height?: number;
-    className?: string;
-}
-
-export const ImageProjectPanel = ({ src, alt, width, height }: Img) => (
+export const ImageProjectPanel = ({ src, alt }: any) => (
     <>
         <Image
             src={src}
