@@ -48,3 +48,9 @@
 .font-Mier {
     @apply font-['Mier_A'];
 }
+.padding-M {
+    @apply py-8 md:py-12 lg:py-16;
+}
+.button-style-M {
+    @apply px-[1rem] py-[0.5rem] text-center border border-blackM rounded-M hover:bg-blackM hover:text-whiteM;
+}

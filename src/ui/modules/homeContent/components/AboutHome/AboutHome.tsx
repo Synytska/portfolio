@@ -23,11 +23,7 @@ export const AboutHome = () => (
                     </p>
                 </div>
                 <MonoText>
-                    <Button
-                        name={ABOUT_BUTTON_TEXT.button.text}
-                        href={ABOUT_BUTTON_TEXT.button.href}
-                        className="px-[1rem] py-[0.6rem] text-center border border-blackM rounded-M hover:bg-blackM hover:text-whiteM"
-                    />
+                    <Button name={ABOUT_BUTTON_TEXT.button.text} href={ABOUT_BUTTON_TEXT.button.href} />
                 </MonoText>
             </div>
 
