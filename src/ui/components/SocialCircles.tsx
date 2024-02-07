@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { SOCIAL_CIRCLES_TEXT } from '../../constants/headeritems';
+import { SOCIAL_CIRCLES_TEXT } from '../modules/header/constants/headeritems';
 
 export const SocialCircles = () => (
     <div className="flex-center-M gap-x-2 gap-y-2">

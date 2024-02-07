@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
 import { Divider } from '@/src/ui/components/Divider';
-import { MonoText } from '@/src/ui/components/MonoText';
 import { VLine } from '@/src/ui/components/VLine';
 import { FooterInfo } from './FooterInfo';
 import { FooterSocial } from './FooterSocial';
+import { MadeByFooter } from '@/src/ui/components/MadeByFooter';
 
 import { CONTACT_SECT } from '@/src/ui/constants/mainconstants';
-import { BUTTON_FOOTER, MADE_BY, LINK_TEXT } from '../constants/footerconstants';
+import { BUTTON_FOOTER, LINK_TEXT } from '../constants/footerconstants';
 
 export const FooterConstructor = () => (
     <>
@@ -36,10 +36,7 @@ export const FooterConstructor = () => (
             </div>
         </div>
         <Divider />
-        <div className="py-[3rem]">
-            <MonoText>
-                <p>©&nbsp;{MADE_BY}</p>
-            </MonoText>
-        </div>
+        <MadeByFooter />
     </>
 );
+

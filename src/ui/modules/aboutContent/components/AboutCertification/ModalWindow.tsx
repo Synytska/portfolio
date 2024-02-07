@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useCallback, useState } from 'react';
 import ReactSimpleImageViewer from 'react-simple-image-viewer';
 
-import { CERTIFICATES } from './constants/aboutitems';
+import { CERTIFICATES } from '../../constants/aboutitems';
 
 export const ModalWindow = () => {
     const [currImg, setCurImage] = useState(0);

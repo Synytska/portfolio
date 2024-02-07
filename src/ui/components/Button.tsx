@@ -1,8 +1,18 @@
 import Link from 'next/link';
 
-export const Button = ({ name, href, className }: { name: string; href: any; className: string }) => (
-    <Link href={href} className={className}>
-        {name}
-    </Link>
+import { MonoText } from './MonoText';
+
+interface IButton {
+    className?: string;
+    name: string;
+    href: any;
+}
+
+export const Button = ({ name, href, className }: IButton) => (
+    <MonoText>
+        <Link href={href} className={className || 'button-style-M flex'} target="_blank">
+            {name}
+        </Link>
+    </MonoText>
 );
 
