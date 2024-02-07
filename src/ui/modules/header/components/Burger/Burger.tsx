@@ -4,8 +4,6 @@ import { useState, createContext } from 'react';
 import { FullMenu } from './FullMenu';
 import { Logo } from './Logo';
 
-import { EMPTY_SPACE } from '@/src/ui/constants/defaultValue';
-
 export const Burger = () => {
     const [isOpen, setIsOpen] = useState(false);
     const burgerClick = () => {
@@ -20,7 +18,7 @@ export const Burger = () => {
                     <div className="burger-M"></div>
                     <div className="translate-y-[9px] burger-M"></div>
                 </div>
-                <div>{isOpen ? <FullMenu /> : EMPTY_SPACE}</div>
+                <div>{isOpen && <FullMenu />}</div>
             </div>
         </div>
     );
