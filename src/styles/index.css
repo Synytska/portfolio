@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Mier A";
-    src: url("/src/MierA-Regular.ttf");
+    font-family: 'Mier A';
+    src: url('/src/MierA-Regular.ttf');
     font-weight: 400;
     font-style: normal;
 }
@@ -15,26 +15,26 @@
 .flex-M {
     @apply flex flex-col;
 }
-.flex-justify-M{
+.flex-justify-M {
     @apply flex justify-between;
 }
-.flex-center-M{
+.flex-center-M {
     @apply flex items-center;
 }
-.rounded-M{
+.rounded-M {
     @apply rounded-tr-[10px] rounded-bl-[10px];
 }
-.rounded-proj-M{
+.rounded-proj-M {
     @apply rounded-bl-[2.5rem] rounded-tr-[2.5rem] mb-[0.8rem] object-cover;
 }
 .grid-gap4-M {
     @apply grid gap-x-4 gap-y-4 items-center auto-cols-fr grid-rows-[auto];
 }
-.gap8-M{
+.gap8-M {
     @apply gap-[0.8rem];
 }
-.gap1_2-M{
-@apply gap-[1.2rem];
+.gap1_2-M {
+    @apply gap-[1.2rem];
 }
 .parragraph {
     @apply my-4 text-[1.4rem] leading-[150%] md:text-[1.5rem];
@@ -54,3 +54,4 @@
 .button-style-M {
     @apply px-[1rem] py-[0.5rem] text-center border border-blackM rounded-M hover:bg-blackM hover:text-whiteM;
 }
+

@@ -2,9 +2,9 @@ import { SVG_PATH } from '../../constants/homeitems';
 
 const SvgMap = ({ strokeBl, strokeGr }: { strokeBl: string; strokeGr: string }) => (
     <>
-        {SVG_PATH.map((i) => (
+        {SVG_PATH.map((i, key) => (
             <>
-                <svg xmlns={i.xmlns} width={i.width} height={i.height} viewBox={i.viewBox} fill={i.fill}>
+                <svg key={key} xmlns={i.xmlns} width={i.width} height={i.height} viewBox={i.viewBox} fill={i.fill}>
                     <path
                         d={i.path.d}
                         stroke={i.path.stroke}
