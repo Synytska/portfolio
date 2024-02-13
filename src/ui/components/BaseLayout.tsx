@@ -1,7 +1,6 @@
 import { FC, PropsWithChildren } from 'react';
 
 import { Header } from '../modules/header/Header';
-import { Footer } from '../modules/footer/Footer';
 
 import { syne } from '@/src/styles/fonts';
 
@@ -11,7 +10,6 @@ export const BaseLayout: FC<PropsWithChildren> = ({ children }) => (
             <div className="w-full max-w-7xl mx-auto my-0">
                 <Header />
                 {children}
-                <Footer />
             </div>
         </div>
     </div>

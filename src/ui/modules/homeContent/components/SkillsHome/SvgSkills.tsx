@@ -2,38 +2,38 @@ import { SVG_PATH } from '../../constants/homeitems';
 
 const SvgMap = ({ strokeBl, strokeGr }: { strokeBl: string; strokeGr: string }) => (
     <>
-        {SVG_PATH.map((i, key) => (
+        {SVG_PATH.map((_, index) => (
             <>
-                <svg key={key} xmlns={i.xmlns} width={i.width} height={i.height} viewBox={i.viewBox} fill={i.fill}>
+                <svg key={index} xmlns={_.xmlns} width={_.width} height={_.height} viewBox={_.viewBox} fill={_.fill}>
                     <path
-                        d={i.path.d}
-                        stroke={i.path.stroke}
-                        stroke-width={i.path['stroke-width']}
-                        stroke-linecap={i.path['stroke-linecap']}
+                        d={_.path.d}
+                        stroke={_.path.stroke}
+                        stroke-width={_.path['stroke-width']}
+                        stroke-linecap={_.path['stroke-linecap']}
                     ></path>
                     <path
-                        d={i.path.d2}
-                        stroke={i.path.stroke}
-                        stroke-width={i.path['stroke-width']}
-                        stroke-linecap={i.path['stroke-linecap']}
+                        d={_.path.d2}
+                        stroke={_.path.stroke}
+                        stroke-width={_.path['stroke-width']}
+                        stroke-linecap={_.path['stroke-linecap']}
                     ></path>
                     <path
-                        d={i.path.d3}
-                        stroke={i.path.stroke}
-                        stroke-width={i.path['stroke-width']}
-                        stroke-linecap={i.path['stroke-linecap']}
+                        d={_.path.d3}
+                        stroke={_.path.stroke}
+                        stroke-width={_.path['stroke-width']}
+                        stroke-linecap={_.path['stroke-linecap']}
                     ></path>
                     <path
-                        d={i.path.d4}
+                        d={_.path.d4}
                         stroke={strokeBl}
-                        stroke-width={i.path['stroke-width']}
-                        stroke-linecap={i.path['stroke-linecap']}
+                        stroke-width={_.path['stroke-width']}
+                        stroke-linecap={_.path['stroke-linecap']}
                     ></path>
                     <path
-                        d={i.path.d5}
+                        d={_.path.d5}
                         stroke={strokeGr}
-                        stroke-width={i.path['stroke-width']}
-                        stroke-linecap={i.path['stroke-linecap']}
+                        stroke-width={_.path['stroke-width']}
+                        stroke-linecap={_.path['stroke-linecap']}
                     ></path>
                 </svg>
             </>

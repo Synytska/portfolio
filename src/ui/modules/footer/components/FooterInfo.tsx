@@ -7,10 +7,10 @@ const infoClass = 'flex-M gap8-M md:gap1_2-M';
 export const FooterInfo = () => (
     <>
         <div className="flex-M gap8-M lg:flex-col lg:gap1_2-M mt-[1.5rem] md:mt-[2rem] lg:mt-[3rem] lg:gap-[0.8rem]">
-            {INFO_CONTACT.map((item) => (
-                <div key={item} className={infoClass}>
+            {INFO_CONTACT.map((info) => (
+                <div key={info} className={infoClass}>
                     <MonoText>
-                        <p>{item}</p>
+                        <p>{info}</p>
                     </MonoText>
                 </div>
             ))}
